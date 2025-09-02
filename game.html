@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Scramble Game</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="game.css">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-keyboard"></i> Word Scramble Challenge</h1>
+
+    <!-- Timer -->
+    <div class="timer-box">
+      <i class="fa-regular fa-clock"></i> Time Left: <span id="timer">60</span>s
+    </div>
+
+    <!-- Scrambled sentence -->
+    <p id="scrambled" class="scrambled"></p>
+
+    <!-- Input box -->
+    <input type="text" id="userInput" placeholder="Type the correct sentence..." />
+
+    <!-- Buttons -->
+    <button onclick="checkAnswer()"><i class="fa-solid fa-check"></i> Submit</button>
+    <button onclick="nextSentence()"><i class="fa-solid fa-forward"></i> Next</button>
+
+    <!-- Result -->
+    <p id="result"></p>
+  </div>
+
+  <!-- JS file -->
+  <script src="game.js"></script>
+</body>
+</html>

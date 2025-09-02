@@ -1,0 +1,93 @@
+/* General page look */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Game container */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00e676;
+}
+
+/* Timer style */
+.timer-box {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+/* Scrambled sentence */
+.scrambled {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #f06292;
+}
+
+/* Input */
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+button:first-of-type {
+  background: #00e676;
+  color: #111;
+}
+
+button:first-of-type:hover {
+  background: #00c853;
+}
+
+button:last-of-type {
+  background: #ff4081;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background: #f50057;
+}
+
+/* Result message */
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
